@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  spam:
+    container_name: spam
+    image: ozhantasdemir/spam
+    ports:
+      - "5000:5000"
+    build:
+      context: .
+      dockerfile: Dockerfile
